@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bilel Chatti — freelance penetration tester specializing in web application, API, and network security testing.">
+  <title>Bilel Chatti | Freelance Penetration Tester</title>
+  <style>
+    :root {
+      --bg: #160909;
+      --panel: #241313;
+      --text: #f5eeee;
+      --muted: #c4b5b5;
+      --accent: #ff6868;
+      --border: #432626;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .container { width: min(1050px, 92%); margin: auto; }
+    header { border-bottom: 1px solid var(--border); }
+    nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .logo { color: var(--text); font-weight: 750; text-decoration: none; font-size: 1.15rem; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 20px; margin: 0; padding: 0; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; }
+    .nav-links a:hover { color: var(--text); }
+    section { padding: 68px 0; }
+
+
+    .x12 {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .x12-content {
+      flex: 1;
+    }
+
+    .profile-picture {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      flex-shrink: 0;
+    }
+
+
+
+
+    .x13 { color: var(--accent); font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { max-width: 780px; margin: 12px 0; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.05; }
+    h2 { margin: 0 0 12px; font-size: clamp(1.7rem, 4vw, 2.3rem); }
+    h3 { margin: 0 0 10px; }
+    p { color: var(--muted); }
+    .x12 p { max-width: 680px; font-size: 1.1rem; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .button { display: inline-block; padding: 10px 16px; border: 1px solid var(--accent); border-radius: 6px; text-decoration: none; font-weight: 650; }
+    .button.primary { color: #210707; background: var(--accent); }
+    .section-intro { max-width: 700px; margin-bottom: 26px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .card { padding: 20px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; }
+    .card ul { margin: 0; padding-left: 19px; color: var(--muted); }
+    .card li + li { margin-top: 5px; }
+    details { padding: 16px 0; border-bottom: 1px solid var(--border); }
+    summary { cursor: pointer; font-weight: 650; }
+    details p { margin-bottom: 0; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 18px; }
+    footer { padding: 24px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 700px) {
+      nav { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+      .nav-links { gap: 14px; }
+      section { padding: 48px 0; }
+      .grid { grid-template-columns: 1fr; }
+      .x12 {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 24px;
+      }
+      .profile-picture {
+        width: 160px;
+        height: 160px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo" href="#home">Bilel Chatti</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="x12 container" id="home">
+      <div>
+        <div class="x13">Web Application Developer | Penetration Tester</div>
+        <h1>Finding weaknesses.<br>Strengthening security.</h1>
+        <p>I help businesses identify and validate security vulnerabilities in web applications, APIs, and networks through hands-on penetration testing.</p>
+        <div class="buttons">
+          <a class="button primary" href="#contact">Discuss a project</a>
+          <a class="button" href="#services">Explore services</a>
+        </div>
+      </div>
+      <img
+    class="profile-picture"
+    src="data:image/jpeg;base64,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"
+    alt="Bilel Chatti — Freelance Penetration Tester"
+    width="240"
+    height="240"
+  >
+
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Penetration Testing Services</h2>
+        <p class="section-intro">Security testing tailored to your application's attack surface and objectives. Testing is performed only with explicit authorization and an agreed scope.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Web Application Testing</h3>
+            <ul>
+              <li>Authentication and access control</li>
+              <li>IDOR and business logic flaws</li>
+              <li>Injection and file upload issues</li>
+              <li>OAuth 2.0, OIDC, and JWT testing</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>API Security Testing</h3>
+            <ul>
+              <li>REST API security assessments</li>
+              <li>Object-level authorization</li>
+              <li>Token and session security</li>
+              <li>Input validation and mass assignment</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Network Pentesting</h3>
+            <ul>
+              <li>Network reconnaissance</li>
+              <li>Port and service enumeration</li>
+              <li>Configuration and exposure checks</li>
+              <li>Vulnerability verification</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <p class="section-intro">Manual testing, security tooling, and custom scripts to support efficient vulnerability discovery and validation.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Security Tools</h3>
+            <p>Burp Suite, Caido, Nmap, Metasploit Framework, Sliver, ffuf, curl, and Linux CLI.</p>
+          </article>
+          <article class="card">
+            <h3>Programming</h3>
+            <p>Python, C, PHP, and JavaScript for scripting, automation, and offensive security tool development.</p>
+          </article>
+          <article class="card">
+            <h3>Methods</h3>
+            <p>Manual security testing, reconnaissance, vulnerability validation, impact assessment, and technical reporting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About &amp; Frequently Asked Questions</h2>
+        <details>
+          <summary>What is your certification?</summary>
+          <p>I hold the CPTS (Certified Penetration Testing Specialist) certification.</p>
+        </details>
+        <details>
+          <summary>How do you approach a test?</summary>
+          <p>I agree on scope and rules of engagement first, then investigate manually, validate findings safely, and provide a report with reproduction steps, impact, and remediation recommendations.</p>
+        </details>
+        <details>
+          <summary>Can you work with international clients?</summary>
+          <p>I can communicate in English, French, and Arabic.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Let's discuss your security needs</h2>
+        <p>Contact me to discuss your application, testing scope, objectives, and timeline.</p>
+        <div class="contact-links">
+          <a class="button primary" href="mailto:bilellchattii@gmail.com">Email me</a>
+          <a class="button" href="https://www.linkedin.com/in/bilel-c-70b579252" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year">2026</span> Bilel Chatti · Freelance Penetration Tester</div>
+  </footer>
+</body>
+</html>
